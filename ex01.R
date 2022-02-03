@@ -1,6 +1,6 @@
 id <- c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
 grade <- c(1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5)
-mid <- c(20,23,26,11,22,29,34,37,15,14,26,15,24,24,33,19,11,27,34,21)
+mid <- c(20,23,26,11,22,29,34,37,15,14,26,15,24,24,33,19,11,27,34,21) 
 fin <- c(33,39,21,11,16,12,30,29,26,25,27,25,11,10,33,25,18,33,21,34)
 
 install.packages("dplyr")
@@ -41,7 +41,7 @@ mid
 mid2= data.frame(id=c(106,107), mid=c(85,77))
 mid
 mid2
-
+ 
 bind_rows(mid, mid2)
 
 # 실습) 항공데이터 분석하기
@@ -72,7 +72,7 @@ score= read_excel("score.xlsx")
 score
 
 # na(결측치)를 파악하는 함수
-# na가 있으면 True
+# na가 있으면 True 
 is.na(score) #is -> boolean 으로 반환
 # T/F 개수를 출력하시오
 
@@ -97,5 +97,5 @@ score$mid = ifelse(is.na(score$mid), 25, score$mid)
 score$mid
 
 boxplot(score$mid)
-score$mid= ifelse(score$mid>100, 25, score$mid)
+score$mid= ifelse(score$mid>100, 25, score$mid) 
 score$mid
