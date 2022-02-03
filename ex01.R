@@ -9,7 +9,7 @@ library(dplyr)
 score= data.frame(id,grade,mid,fin)
 score
 
-# 데이터를 그룹별로 묶어주기
+# 데이터를 그룹별로 묶어주기 
 # 각 반별로 묶어주는 방법 group_by()
 # 단순히 group_by()만 사용하지 않는다
 # group_by()와 함께 자주 사용되는 함수는
@@ -50,7 +50,7 @@ library(hflights)
 dim(hflights)
 View(hflights)
 
-# 비행기 번호판별 가장 오래걸린 출발시간을 출력
+# 비행기 번호판별 가장 오래걸린 출발시간을 출력 
 hflights %>%  group_by(TailNum) %>% summarise(DepTime=max(DepTime, na.rm=T))
 # 결항건수가 가장 많았던 날 알아내기
 # 결항사유별 건수를 출력
